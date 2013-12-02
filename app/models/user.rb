@@ -4,4 +4,6 @@ class User
   key :age, Integer
   timestamps!
   has_many :posts
+  validates_presence_of :name 
+  validates_numericality_of :age
 end
